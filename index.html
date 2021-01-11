@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Feedback modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button class="close" onclick="alertShow()">X</button>
+        <h1>Give feedback</h1>
+        <p>What do you think of the editing tool?</p>
+        
+        <form id="form">
+            <div class="userSatisf">
+                <label class="customRadio">
+                    <input type="radio" value="Nightmare" name="Satisfaction" id="exp">
+                    <span class="radio-btn"><i class="far fa-angry"></i></span>
+                </label>
+                <label class="customRadio">
+                    <input type="radio" value="Bad" name="Satisfaction" id="exp">
+                    <span class="radio-btn"><i class="far fa-frown"></i></span>
+                </label>
+                <label class="customRadio">
+                    <input type="radio" value="3.6 not great not terrible" name="Satisfaction" id="exp">
+                    <span class="radio-btn"><i class="far fa-meh"></i></span>
+                </label>
+                <label class="customRadio">
+                    <input type="radio" value="Ok" name="Satisfaction" id="exp">
+                    <span class="radio-btn"><i class="far fa-smile"></i></span>
+                </label>
+                <label class="customRadio">
+                    <input type="radio" value="Stoned" name="Satisfaction" id="exp">
+                    <span class="radio-btn"><i class="far fa-grin"></i></i></span>
+                </label>
+            </div>
+            <h5>Do you have any thoughts you would like to share ?</h5>
+            <textarea name="sugestion" id="sugest" cols="3" rows="10"></textarea>
+            <h5>May we follow you back on your feedback ?</h5>
+            <div class="userReply">
+                <input type="radio" value="Yes" name="Reply" id="reply">Yes
+                <input type="radio" value="No" name="Reply" id="reply" style="margin-left: 1rem">No
+            </div>
+            <div class="buttons">
+                <button type="submit" class="send btn">Send</button>
+                <button type="button" onclick="alertShow()" class="btn">Cancel</button>
+            </div>
+        </form>
+        <div id="result"></div> 
+    </div>
+</body>
+</html>

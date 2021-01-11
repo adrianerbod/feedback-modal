@@ -1,0 +1,136 @@
+:root {
+    --bg-color: #EBEBF3;
+    --bg-gray-color: #ECEBEB;
+    --blue: #4775f7;
+    --light-blue: #99A6CB;
+    --dark-light-blue: #727E9F;
+    --yellow: #EBB34B;
+    --brown: #B4ACB4;
+    --text-color: #1c2438;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    padding: 4rem 3rem 3rem;
+}
+
+.close {
+    font-size: 1rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0.2rem 0.7rem;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+h1 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+p {
+    font-size: 0.7rem;
+    color: var(--text-color);
+}
+h5 {
+    margin-top:3em;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+#sugest {
+    border: 1px solid var(--blue);
+    padding: 1rem;
+    width:100%;
+    max-width: 350px;
+    max-height: 150px;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+
+.userReply {
+    margin-bottom: 3rem;
+}
+
+.buttons{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+}
+.userSatisf {
+    margin: 2rem 0;
+    text-align: center;
+}
+.btn {
+    padding:0.7rem 2.5rem;
+    border-radius: 7px;
+    box-shadow: 0 7px 15px rgba(20, 118, 245, 0.1);
+    border: 1px solid #000000;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.send {
+    margin-right: 1rem;
+    background-color:var(--blue);
+    color: #ffffff;
+    border: none;
+}
+.btn:hover, .close:hover {
+    transform: scale(0.9);
+}
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+
+
+.customRadio input{
+    display: none;
+}
+.radio-btn {
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.radio-btn>i {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+.customRadio input:checked+.radio-btn>i {
+    background-color: var(--yellow);
+    border-radius: 50px;
+}
+
+.userReply input {
+    margin-top: 1rem;
+}
